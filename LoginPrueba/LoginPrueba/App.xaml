@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPrueba.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--<Color x:Key="Primary">#F6B32D</Color>-->
+            <Color x:Key="Primary">#031A2B</Color>
+            <Color x:Key="SecondaryColor">#031A2B</Color>
+            
+            <Color x:Key="EntryColor">#627A87</Color>
+            <Color x:Key="BarraColor">#46768D</Color>
+
+            <Color x:Key="BlackPearl50">#EFF9FF</Color>
+            <Color x:Key="BlackPearl100">#DFF1FF</Color>
+            <Color x:Key="BlackPearl200">#B7E5FF</Color>
+            <Color x:Key="BlackPearl300">#78D2FF</Color>
+            <Color x:Key="BlackPearl400">#30BBFF</Color>
+            <Color x:Key="BlackPearl500">#05A2F2</Color>
+            <Color x:Key="BlackPearl600">#0082CF</Color>
+            <Color x:Key="BlackPearl700">#0067A8</Color>
+            <Color x:Key="BlackPearl800">#02588A</Color>
+            <Color x:Key="BlackPearl900">#084872</Color>
+            <Color x:Key="BlackPearl950">#031A2B</Color>
+
+            <Color x:Key="SlateGray50">#F4F6F7</Color>
+            <Color x:Key="SlateGray100">#E3E9EA</Color>
+            <Color x:Key="SlateGray200">#C9D3D8</Color>
+            <Color x:Key="SlateGray300">#A4B4BC</Color>
+            <Color x:Key="SlateGray400">#778E99</Color>
+            <Color x:Key="SlateGray500">#627A87</Color>
+            <Color x:Key="SlateGray600">#4F606B</Color>
+            <Color x:Key="SlateGray700">#44505A</Color>
+            <Color x:Key="SlateGray800">#3D464D</Color>
+            <Color x:Key="SlateGray900">#363C43</Color>
+            <Color x:Key="SlateGray950">#21262B</Color>
+
+            <Color x:Key="Buttercup50">#FFFAEB</Color>
+            <Color x:Key="Buttercup100">#FDEFC8</Color>
+            <Color x:Key="Buttercup200">#FADD8D</Color>
+            <Color x:Key="Buttercup300">#F8C851</Color>
+            <Color x:Key="Buttercup400">#F6B32D</Color>
+            <Color x:Key="Buttercup500">#EF9111</Color>
+            <Color x:Key="Buttercup600">#D46C0B</Color>
+            <Color x:Key="Buttercup700">#B04B0D</Color>
+            <Color x:Key="Buttercup800">#8F3A11</Color>
+            <Color x:Key="Buttercup900">#753112</Color>
+            <Color x:Key="Buttercup950">#431705</Color>
+
+
+
+            <Style TargetType="Button">
+                <Setter Property="WidthRequest" Value="150"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="TextColor" Value="{StaticResource SecondaryColor}"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource Buttercup400}"/>
+                <Setter Property="CornerRadius" Value="7"/>
+            </Style>
+
+        </ResourceDictionary>
+        
+
+        <Style x:Key="EntryFrame" TargetType="Frame">
+            <Setter Property="HasShadow" Value="False"/>
+            <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="Padding" Value="15,0"/>
+            <Setter Property="CornerRadius" Value="7"/>
+            <Setter Property="BackgroundColor" Value="{DynamicResource EntryColor}"/>
+            <Setter Property="BorderColor" Value="{DynamicResource EntryColor}"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="VerticalOptions" Value="StartAndExpand"/>
+        </Style>
+    </Application.Resources>
+</Application>

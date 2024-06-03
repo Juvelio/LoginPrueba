@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginPrueba.Views.LandingPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*, auto">
+        <BoxView Grid.RowSpan="2">
+            <BoxView.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#46768D" Offset="0"/>
+                    <GradientStop Color="#031A2B" Offset="1"/>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+
+        <StackLayout Grid.Row="0" VerticalOptions="Center">
+            <Image Source="clapperboard.png" WidthRequest="80"  HorizontalOptions="Center"/>
+            <Label Text="SILVER MOVIES" TextColor="White" Opacity="0.6" CharacterSpacing="5" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" WidthRequest="300" HorizontalOptions="Center" Margin="0,0,0,30" Spacing="20">
+            <StackLayout>
+             
+
+            </StackLayout>
+
+            <Button Text="Sign Up" FontAttributes="Bold" TextTransform="None" Command="{Binding SignUpCommand}"/>
+
+
+            <Grid HorizontalOptions="Center">
+                <BoxView BackgroundColor="White" HeightRequest="1" WidthRequest="65" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <Ellipse Fill="White" WidthRequest="25" HeightRequest="25" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <Label Text="OR" TextColor="Black" FontSize="10" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+
+            </Grid>
+
+            <Button Text="Sign In" TextColor="White" FontAttributes="Bold" BackgroundColor="#6F8E9C" 
+             TextTransform="None" 
+             Command="{Binding SignInCommand}"/>
+
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>
